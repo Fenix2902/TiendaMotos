@@ -1,0 +1,13 @@
+.banner{
+    background-image: url("../img/banner.jpg");
+    background-position: top center;
+    background-size: cover;
+    padding: 20%;
+    background-attachment: fixed;
+    /*background-repeat: no-repeat;*/
+}
+
+.menu{
+    background-color: rgb(14, 13, 13);
+    
+}
