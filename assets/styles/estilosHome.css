@@ -1,3 +1,7 @@
+.header{
+    width: 100%;
+    position: fixed;
+}
 .banner{
     background-image: url("../img/banner.jpg");
     background-position: top center;
@@ -9,5 +13,6 @@
 
 .menu{
     background-color: rgb(14, 13, 13);
+
     
 }

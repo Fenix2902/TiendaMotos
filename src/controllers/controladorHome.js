@@ -24,9 +24,17 @@ productos.forEach(function(producto){
     imagen.classList.add("img-fluid","w-100");
     imagen.src = producto.fotos[0];
 
+    //Crear descripcion
+
+    let precioArticulo = document.createElement('p');
+    precioArticulo.classList.add("align-self-center");
+    precioArticulo.textContent = producto.precio[0];
+    
     //padres e hijos
 
     tarjeta.appendChild(imagen);
     columna.appendChild(tarjeta);
     fila.appendChild(columna);
+    tarjeta.appendChild(precioArticulo);
+    
 })

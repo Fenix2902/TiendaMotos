@@ -5,14 +5,14 @@ export let productos = Array(
         nombre:"producto1",
         descripcion:"descripcion",
         fotos:Array("https://firebasestorage.googleapis.com/v0/b/katienda.appspot.com/o/DucatiBlanca.png?alt=media&token=5bd29589-ae85-4ad8-bc8a-80bab1e07df0","na2"),
-        precio: 12000000,
+        precio:Array("$12.000.000"),
         popularidad:5
     },
     {
         nombre:"producto2",
         descripcion:"descripcion",
         fotos:Array("https://firebasestorage.googleapis.com/v0/b/katienda.appspot.com/o/MT09-AZUL.webp?alt=media&token=ee8f2ef1-b9d0-49bd-85af-995a27b4668a","na2"),
-        precio: 12000000,
+        precio:Array("$12.000.000"),
         popularidad:5
     },
     {
