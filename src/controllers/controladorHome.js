@@ -3,7 +3,7 @@ import { pintarProductos } from "../helpers/pintarProductos.js";
 
 //llamando a la fila
 
-let fila = document.getElementById('fila'); 
+//let fila = document.getElementById('fila'); 
 
 
 //Pintar los productos de la tienda.

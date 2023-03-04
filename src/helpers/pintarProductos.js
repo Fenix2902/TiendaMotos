@@ -23,11 +23,15 @@ export function pintarProductos(productos){
         nombre.classList.add("text-center");
         nombre.textContent = producto.nombre;
     
-        //Crear descripcion
+        //Crear Precio
     
         let precioArticulo = document.createElement('h5');
         precioArticulo.classList.add("text-center","text-success","fw-bold");
         precioArticulo.textContent = "USD "+producto.precio;
+
+        //Creando Descripcion
+
+        let descripcion = document.createElement
         
         //Dectectando evento
 
