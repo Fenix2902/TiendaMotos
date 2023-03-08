@@ -26,12 +26,15 @@ export function pintarProductos(productos){
         //Crear Precio
     
         let precioArticulo = document.createElement('h5');
-        precioArticulo.classList.add("text-center","text-success","fw-bold");
+        precioArticulo.classList.add("text-center","text-success","fw-bold","andrea");
         precioArticulo.textContent = "USD "+producto.precio;
 
         //Creando Descripcion
-
-        let descripcion = document.createElement
+        
+        let descripcion = document.createElement('h6');
+        descripcion.classList.add("text-center","text-dark","fw-bold","h6");
+        descripcion.textContent = producto.descripcion;
+        
         
         //Dectectando evento
 
@@ -47,9 +50,12 @@ export function pintarProductos(productos){
     
         tarjeta.appendChild(imagen);
         tarjeta.appendChild(nombre);
+        tarjeta.appendChild(descripcion);
         tarjeta.appendChild(precioArticulo);
         columna.appendChild(tarjeta);
         fila.appendChild(columna);
+
+
         
     })
 }
