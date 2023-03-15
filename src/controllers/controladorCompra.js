@@ -21,14 +21,30 @@ cantidad.addEventListener('keydown', (evento) => {
     }
 });
 
-
-function subtotal(){
-    let cantidad = document.getElementById("cantidad")
-    let precio = document.getElementById("precio")
-
-    let subtotal= cantidad*precio
-    return subtotal
+let infoCarrito = JSON.parse(localStorage.getItem("carrito"))
+let carrito
+let pildora = document.getElementById("pildora")
+if (infoCarrito != null) {
+    carrito = infoCarrito
+    pildora.textContent = carrito.length
+} else {
+    carrito = Array()
 }
+
+let btnAgregarProducto = document.getElementById("btnagregarcarrito")
+
+btnAgregarProducto.addEventListener("click", function () {
+    carrito.push(infoProducto)
+    pildora.textContent = carrito.length
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+})
+
+let btnLimpiarCarrito = document.getElementById("btnLimpiarCarrito")
+btnLimpiarCarrito.addEventListener("click",function(){
+    carrito = Array();
+    localStorage.setItem("carrito",JSON.stringify(carrito))
+})
+
 
 // subtotal,(precio,cantidad)=>{
 //  let subtotal = precio*cantidad

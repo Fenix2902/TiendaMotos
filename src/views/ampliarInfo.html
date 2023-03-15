@@ -50,11 +50,21 @@
                             <a class="nav-link disabled">Disabled</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 fst-italic" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success fst-italic" type="submit">Search</button>
-                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">
+                                <i class="bi bi-cart4 fs-2"></i>
+                                <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger" id="pildora">
+                                    0
+                                  </span>
+                            </a>
+                        </li>   
+                    </ul>
+                    <ul class="navbar-nav ms-40">
+                        <a href="" class="nav-link active" id="btnLimpiarCarrito">
+                            <i class="bi bi-trash3 fs-2"></i>
+                          </a>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -69,7 +79,7 @@
                     <h3 class="fw-bold mt-2" id="nombre"></h3>
                     <p id="descripcion"></p>
                     <h2 class="text-success" id="precio"></h2>
-                    <img src="../../assets/img/visa1.png" alt="logo visa" class="img-fluid w-25"><br>
+                    <img src="../../assets/img/visa1.png" alt="logo visa" class="img-fluid w-45"><br>
                     <i class="bi bi-truck fs-1 mt-5"></i>
                     <h4>Entrega en 24 horas</h4><br>
                     <i class="bi bi-arrow-counterclockwise fs-1 mt-5"></i>
@@ -78,7 +88,7 @@
                     <input type="number" placeholder="0" class="form-control" required="" min="0" id="cantidad"><hr>
                     <h4 id="subtotal">subtotal</h4><hr>
                     <h2 class="mt-2 fw-bold">USD $1500</h2>
-                    <button class="btn btn-warning" type="button"><i class="bi bi-cart4"></i> Añadir al carrito</button>
+                    <button class="btn btn-warning" type="button" id="btnagregarcarrito"><i class="bi bi-cart4"></i> Añadir al carrito</button>
                     <button class="btn btn-success" type="button">Ver precio en Dolares</button>
                     <button type="submit">enviar</button>
 
