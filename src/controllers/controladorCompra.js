@@ -14,6 +14,9 @@ precio.textContent = infoProducto.precio
 let descripcion = document.getElementById("descripcion")
 descripcion.textContent = infoProducto.descripcion
 
+let total = document.getElementById("total")
+
+
 
 cantidad.addEventListener('keydown', (evento) => {
     if (evento.key === '-' || evento.key === 'Subtract') {
@@ -37,6 +40,9 @@ btnAgregarProducto.addEventListener("click", function () {
     carrito.push(infoProducto)
     pildora.textContent = carrito.length
     localStorage.setItem("carrito", JSON.stringify(carrito))
+    let precio = infoProducto.precio.split("USD ")[1]
+    let cantidad = document.getElementById("cantidad").value
+    subtotal(precio,cantidad)
 })
 
 let btnLimpiarCarrito = document.getElementById("btnLimpiarCarrito")
@@ -46,7 +52,21 @@ btnLimpiarCarrito.addEventListener("click",function(){
 })
 
 
-// subtotal,(precio,cantidad)=>{
-//  let subtotal = precio*cantidad
-//  return subtotal
-// }
+function subtotal(precio,cantidad){
+    let subtotal = precio*cantidad;
+    console.log(subtotal)
+    total.textContent=subtotal
+}
+
+// let btnConversor = document.getElementById("btnConversor")
+// btnConversor.addEventListener("click",function(){
+    
+    
+// })
+
+function Dolares(total) {
+    let dolar = total*0.00023
+    console.log(dolar)
+  }
+  
+Dolares(total)

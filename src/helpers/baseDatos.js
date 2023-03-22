@@ -5,7 +5,7 @@ export let productos = Array(
         nombre:"Ducati",
         descripcion:"El lado versátil de la deportividad: sin renunciar nunca a su impronta deportiva, SuperSport combina confort y versatilidad gracias a soluciones que logran un componente perfecto para el uso diario. La SuperSport ahora disponible en un nuevo color: Gris Titanium",
         fotos:Array("https://firebasestorage.googleapis.com/v0/b/katienda.appspot.com/o/DucatiBlanca.png?alt=media&token=5bd29589-ae85-4ad8-bc8a-80bab1e07df0","https://firebasestorage.googleapis.com/v0/b/katienda.appspot.com/o/DucatiRoja.png?alt=media&token=f0f42db0-5d98-4eb0-9853-581b150c9231"),
-        precio:12000000,
+        precio:13000000,
         popularidad:5
     },
     {

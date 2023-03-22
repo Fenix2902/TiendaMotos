@@ -18,7 +18,7 @@
         <nav
             class="navbar navbar-expand-lg menu navbar-dark animate__animated animate__backInDown fst-italic fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="../../index.html">TiendaMotos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
+                        </li> -->
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Dropdown
@@ -45,10 +45,10 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <!-- <li class="nav-item">
                             <a class="nav-link disabled">Disabled</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -74,23 +74,25 @@
             <div class="row">
                 <div class="col-8"><img
                         src=""
-                        alt="foto" class="img-fluid w-100" id="foto"></div>
+                        alt="foto" class="img-fluid w-100 mt-5" id="foto"></div>
                 <div class="col-4 border border-start" id="descripcionproducto">
-                    <h3 class="fw-bold mt-2" id="nombre"></h3>
+                    <h3 class="fw-bold mt-5" id="nombre"></h3>
                     <p id="descripcion"></p>
                     <h2 class="text-success" id="precio"></h2>
-                    <img src="../../assets/img/visa1.png" alt="logo visa" class="img-fluid w-45"><br>
+                    <img src="../../assets/img/visa1.png" alt="logo visa" class="img-fluid w-45">
+                    <img src="../../assets/img/paypal.png" alt="logo visa" class="img-fluid w-45">
+                    <img src="../../assets/img/mastercard.png" alt="logo visa" class="img-fluid w-45"><br>
                     <i class="bi bi-truck fs-1 mt-5"></i>
                     <h4>Entrega en 24 horas</h4><br>
                     <i class="bi bi-arrow-counterclockwise fs-1 mt-5"></i>
-                    <h4>Devolución en 30 dias</h4><br><br>
+                    <h4>Devolución en 30 dias</h4><br>
                     <h4>Cantidad</h4>
                     <input type="number" placeholder="0" class="form-control" required="" min="0" id="cantidad"><hr>
-                    <h4 id="subtotal">subtotal</h4><hr>
-                    <h2 class="mt-2 fw-bold">USD $1500</h2>
+                    <h4>Subtotal</h4><hr>
+                    <h2 class="mt-2 fw-bold" id="total"></h2> 
                     <button class="btn btn-warning" type="button" id="btnagregarcarrito"><i class="bi bi-cart4"></i> Añadir al carrito</button>
-                    <button class="btn btn-success" type="button">Ver precio en Dolares</button>
-                    <button type="submit">enviar</button>
+                    <button class="btn btn-success" type="button" id="btnCoversor">Ver precio en Dolares</button>
+                    <!-- <button type="submit">enviar</button> -->
 
                 </div>
             </div>
