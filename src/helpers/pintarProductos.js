@@ -27,7 +27,7 @@ export function pintarProductos(productos){
     
         let precioArticulo = document.createElement('h5');
         precioArticulo.classList.add("text-center","text-success","fw-bold","andrea");
-        precioArticulo.textContent = "USD "+producto.precio;
+        precioArticulo.textContent = "COP "+producto.precio;
 
         //Creando Descripcion
         
